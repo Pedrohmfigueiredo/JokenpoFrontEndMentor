@@ -1,0 +1,48 @@
+.btn{
+    padding: 8px 34px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.btn:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.btn[type='fill']{
+    border: none;
+    background: var(--white-bg);
+}
+
+.btn[type='outline']{
+    border: 1px solid var(--text);
+    background: none;
+    color: var(--text);
+}
+.btn[type='you win']{
+    border: none;
+    background: var(--white-bg);
+    font-size: 16px;
+} 
+.btn[type='you lose']{
+    border: none;
+    background: var(--white-bg);
+    font-size: 16px;
+}
+.btn[type='draw']{
+    border: none;
+    background: var(--white-bg);
+    font-size: 16px;
+}
+.btn[type='you win']:hover{
+    color: #3df83d;
+}
+.btn[type='you lose']:hover{
+    color: red;
+}
+.btn[type='draw']:hover{
+    color:red
+}

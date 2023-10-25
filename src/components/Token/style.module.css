@@ -1,0 +1,73 @@
+.coin,
+.coin div{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.coin{
+    width: 170px;
+    height: 170px;
+    border-bottom: 8px solid rgba(0,0,0,0.3);
+    transition: 0.2s;
+    position: relative;
+}
+
+.coin:hover{
+    transition: 0.2s;
+    scale: 1.05;
+}
+
+.coin div{
+    width: 130px;
+    height: 130px;
+    background: var(--white-bg);
+    border-top:6px solid rgba(0,0,0,0.15);
+}
+
+[color = 'rock']{
+    background: var(--rock);
+}
+[color = 'paper']{
+    background: var(--paper);
+}
+[color = 'scissors']{
+    background: var(--scissors);
+}
+
+.coin img{
+    cursor: pointer;
+}
+
+.coin:not([color]){
+    background: var(--none);
+    opacity: 0.5;
+}
+
+.coin:not([color]) div{
+    background-color: var(--none);
+    border: none;
+    cursor: default;
+}
+
+.coin:disabled:hover{
+    scale: 1.0;
+}
+
+.coin:disabled[color]{
+    animation: choose .2s ease-in-out;
+}
+
+@keyframes choose{
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
+}

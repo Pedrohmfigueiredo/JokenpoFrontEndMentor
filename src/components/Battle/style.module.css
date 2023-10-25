@@ -1,0 +1,29 @@
+.battle{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    animation: show 0.5s;
+}
+
+.battle div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.battle h4{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+@keyframes show{
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(100%);
+    }
+}

@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
+    border: 2px solid var(--header);
+    border-radius: 16px;
+    padding: 12px 20px;
+}
+
+.header img{
+    max-width: 128px;
+}

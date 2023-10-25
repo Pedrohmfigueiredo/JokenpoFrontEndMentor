@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Comfortaa&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  cursor: default;
+  user-select: none;
+}
+
+:root{
+  --scissors: linear-gradient(to top,hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  --paper: linear-gradient(to top,hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  --rock: linear-gradient(to top,hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header: hsl(217, 16%, 45%);
+
+  --none: hsl(237, 49%, 15%);
+  --body-bg: radial-gradient(hsl(214, 47%, 23%),  hsl(237, 49%, 15%));
+  --white-bg: #fff;
+  --text:rgba(255, 255, 255, 0.8);
+  --modal-bg: rgba(0, 0, 0, 0.7);
+}
+
+body{
+  background: var(--body-bg);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}

@@ -1,0 +1,19 @@
+.score{
+    background: var(--white-bg);
+    padding: 8px 32px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.score span{
+    color: var(--score-text);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.score h3{
+    color: var(--dark-text);
+    font-size: 40px;
+    opacity: 0.9;
+}

@@ -1,0 +1,20 @@
+.effect{
+    position: absolute;
+    width: 180% !important;
+    height: 180% !important; 
+    border-radius: 50%;
+    background: #ffffff15 !important;
+    z-index: -10;
+    border: none !important;
+    animation: efeito 1s forwards;
+    scale: 0;
+}
+
+@keyframes efeito{
+    from{
+        scale: 0.3;
+    }
+    to{
+        scale: 1;
+    }
+}

@@ -1,0 +1,29 @@
+.options{
+    position: relative;
+    display: inline-block;
+    transform: translateY(-20%);
+}
+
+.options img{
+    max-width: 250px;
+}
+
+.options button{
+    position: absolute;
+}
+
+.options [color='rock']{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 25%)
+}
+.options [color='paper']{
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%)
+}
+.options [color='scissors']{
+    top: 0;
+    right: 0;
+    transform: translate( 50%, -50%)
+}

@@ -1,0 +1,14 @@
+.game{
+    display: grid;
+    gap: 180px;
+    place-items: center;
+    grid-template-rows: 100px 35vh;
+    grid-template-columns: 1fr;
+}
+
+.game > button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 16px;
+}

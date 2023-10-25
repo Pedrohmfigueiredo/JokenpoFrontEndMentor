@@ -1,0 +1,33 @@
+.modal {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	inset: 0;
+	background: var(--modal-bg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal_wrapper {
+	background: var(--white-bg);
+	padding: 24px 32px;
+	border-radius: 8px;
+}
+
+.modal_wrapper header {
+	display: flex;
+	color: var(--dark-text);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.modal_wrapper .btnClose {
+	cursor: pointer;
+}
+
+.modal_wrapper .btnClose:hover{
+	transition: 0.5s;
+    transform: scale(1.1);
+}
